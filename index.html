@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Thomas Dedinsky's URL Shortner</title>
+  <link rel="stylesheet" type="text/css" href="day.css">
+</head>
+<body>
+  <div class="container">
+    <ul class="accordion" style="padding-bottom:3px">
+      <li class="tabs">
+        <div class="social-links website-icon">
+          <a href="https://thomasdedinsky.com">Website</a>
+        </div>
+        <div class="paragraph">
+          <h1>Website</h1>
+          <p>A quick glimpse into who I am and what I've done.</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links github-icon">
+          <a href="https://github.com/deadinsky">Github</a>
+        </div>
+        <div class="paragraph">
+          <h1>Github</h1>
+          <p>Where the code from some side projects, hackathons, school assignments, and full-time jobs is congregated.</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links linkedin-icon">
+           <a href="https://linkedin.com/in/dedinsky">LinkedIn</a>
+        </div>
+        <div class="paragraph">
+          <h1>LinkedIn</h1>
+          <p>An expanded online resume on Facebook for Business. If you want to see what I've done outside of code, look here.</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links email-icon">
+          <a href="mailto:thomasdedinsky@gmail.com">Email</a>
+        </div>
+        <div class="paragraph">
+          <h1>Email</h1>
+          <p>If you need to communicate to me via a written format, email thomas.dedinsky@gmail.com. I'm pretty attentive to it.</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links resume-icon">
+          <a href="http://thomasdedinsky.com/Resume.pdf">Resume</a>
+        </div>
+        <div class="paragraph">
+          <h1>Resume</h1>
+          <p>Do you want a one page summary of me? Are you an employer looking for a tl;dr version of myself?</p>
+        </div>
+      </li>
+    </ul>
+    <ul class="accordion" style="padding-top:2px">
+      <li class="tabs">
+        <div class="social-links reddit-icon">
+          <a href="https://www.reddit.com/user/Deadinsky66/">Reddit</a>
+        </div>
+        <div class="paragraph">
+          <h1>Reddit</h1>
+          <p>I moderate a few subreddits pretty well and do some impressive css work on top of that. And the occassional shitpost.</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links twitch-icon">
+          <a href="http://twitch.tv/deadinsky/">Twitch</a>
+        </div>
+        <div class="paragraph">
+          <h1>Twitch</h1>
+          <p>I stream sometimes, mainly TPP Game Nights when we play Jackbox Party Pack, so come join us if you want some fun!</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links youtube-icon">
+          <a href="https://www.youtube.com/channel/UC053SlpNmBBBVMFCuLkVPng">Youtube</a>
+        </div>
+        <div class="paragraph">
+          <h1>YouTube</h1>
+          <p>I mean, if you're really curious, I have two videos on there and an overturned copyright notice.</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links twitter-icon">
+          <a href="http://twitter.com/deadinsky">Twitter</a>
+        </div>
+        <div class="paragraph">
+          <h1>Twitter</h1>
+          <p>If you want occassional hockey retweets once every few weeks, look no further.</p>
+        </div>
+      </li>
+      <li class="tabs">
+        <div class="social-links imgur-icon">
+          <a href="http://deadinsky.imgur.com/">Imgur</a>
+        </div>
+        <div class="paragraph">
+          <h1>Imgur</h1>
+          <p>Hey I upload images onto the internet and compile them sometimes, it's pretty swell.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+  <script>
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      var test = document.getElementsByClassName('tabs');
+      for (index = 0; index < test.length; ++index) {
+        test[index].classList.add("tabsMobile");
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,311 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    display: table;
+}
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+html {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+a img {
+  border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+body {
+  background: #bdd6ee;
+  font-family: Lato, sans-serif;
+}
+@font-face {
+  font-family: 'Socicon';
+  src: url('fonts/icomoon.eot');
+  src: url('fonts/icomoon.eot') format('embedded-opentype'), url('fonts/icomoon.woff2') format('woff2'), url('fonts/icomoon.tt') format('truetype'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="socicon-"],
+[class*=" socicon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Socicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  vertical-align: middle;
+}
+.accordion {
+  background: #1f4e79;
+  width: 100%;
+  display: block;
+  list-style-type: none;
+  overflow: hidden;
+  font-size: 0;
+}
+.tabs {
+  display: inline-block;
+  background-color: #2e74b5;
+  border-right: #1f4e79 1px solid;
+  width: 80px;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  -moz-transition: all 0.2s ease-in-out 0.05s;
+  -o-transition: all 0.2s ease-in-out 0.05s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition-delay: 0.05s;
+  transition: all 0.2s ease-in-out 0.05s;
+}
+.tabs:hover {
+  width: 450px;
+}
+.tabsMobile:hover {
+  width: 80px;
+}
+.tabs:hover .social-links a:before {
+  margin-left: -100px;
+}
+.tabs:hover .social-links a:after {
+  margin-left: -5px;
+}
+.tabs .paragraph {
+  position: relative;
+  width: 360px;
+  margin-left: 80px;
+  padding: 50px 0 0 10px;
+  height: 200px;
+  background: #fff;
+}
+.tabs .paragraph h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.tabs .paragraph p {
+  font-size: 0.88em;
+  line-height: 1.5em;
+  padding-right: 30px;
+}
+.social-links {
+  display: block;
+}
+.social-links a {
+  display: block;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 1;
+}
+.social-links a:before, .social-links a:after {
+  -moz-transition: all 0.2s ease-in-out 0.05s;
+  -o-transition: all 0.2s ease-in-out 0.05s;
+  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition-delay: 0.05s;
+  transition: all 0.2s ease-in-out 0.05s;
+  width: 80px;
+  height: 200px;
+  position: absolute;
+  text-indent: 0;
+  padding-top: 90px;
+  padding-left: 25px;
+  display: block;
+  font: normal 30px Socicon;
+  color: #fff;
+}
+.social-links a:after {
+  font-size: 48px;
+  padding-left: 20px;
+  padding-top: 80px;
+  margin-left: 85px;
+}
+@media(max-height:247px) {
+  .social-links a:before,.social-links a:after{padding-top:14px;padding-left:7px;font: normal 8px Socicon;width: 20px;height: 30px;}
+  .social-links a:after{padding-top:12px;padding-left:5px;font: normal 12px Socicon;margin-left: 22px;}
+  .tabs .paragraph{height:30px;width:90px;margin-left:20px;padding: 13px 0 0 3px;}
+  .tabs:hover {width: 113px;}
+  .tabs:hover .social-links a:before {margin-left: -25px;}
+  .tabs:hover .social-links a:after {margin-left: -2px;}
+  .tabs .paragraph h1 {font-size: 0.33em;margin-bottom: 2px;}
+  .tabs .paragraph p {font-size: 0.22em;padding-right: 8px;}
+  .tabs,.tabsMobile:hover {width:20px;}
+}
+@media(min-height:248px) {
+  .social-links a:before,.social-links a:after{padding-top:20px;padding-left:9px;font: normal 12px Socicon;width: 30px;height: 45px;}
+  .social-links a:after{padding-top:18px;padding-left:8px;font: normal 18px Socicon;margin-left: 33px;}
+  .tabs .paragraph{height:45px;width:135px;margin-left:30px;padding: 19px 0 0 4px;}
+  .tabs:hover {width: 169px;}
+  .tabs:hover .social-links a:before {margin-left: -38px;}
+  .tabs:hover .social-links a:after {margin-left: -2px;}
+  .tabs .paragraph h1 {font-size: 0.48em;margin-bottom: 2px;}
+  .tabs .paragraph p {font-size: 0.33em;padding-right: 12px;}
+  .tabs,.tabsMobile:hover {width:30px;}
+}
+@media(min-height:330px) {
+  .social-links a:before,.social-links a:after{padding-top:27px;padding-left:13px;font: normal 15px Socicon;width: 40px;height: 60px;}
+  .social-links a:after{padding-top:24px;padding-left:10px;font: normal 24px Socicon;margin-left: 43px;}
+  .tabs .paragraph{height:60px;width:180px;margin-left:40px;padding: 25px 0 0 5px;}
+  .tabs:hover {width: 225px;}
+  .tabs:hover .social-links a:before {margin-left: -50px;}
+  .tabs:hover .social-links a:after {margin-left: -3px;}
+  .tabs .paragraph h1 {font-size: 0.63em;margin-bottom: 3px;}
+  .tabs .paragraph p {font-size: 0.44em;padding-right: 15px;}
+  .tabs,.tabsMobile:hover {width:40px;}
+}
+@media(min-height:495px) {
+  .social-links a:before,.social-links a:after{padding-top:41px;padding-left:19px;font: normal 23px Socicon;width: 60px;height: 90px;}
+  .social-links a:after{padding-top:36px;padding-left:15px;font: normal 36px Socicon;margin-left: 64px;}
+  .tabs .paragraph{height:90px;width:270px;margin-left:60px;padding: 38px 0 0 8px;}
+  .tabs:hover {width: 338px;}
+  .tabs:hover .social-links a:before {margin-left: -75px;}
+  .tabs:hover .social-links a:after {margin-left: -4px;}
+  .tabs .paragraph h1 {font-size: 0.84em;margin-bottom: 4px;}
+  .tabs .paragraph p {font-size: 0.66em;padding-right: 23px;}
+  .tabs,.tabsMobile:hover {width:60px;}
+}
+@media(min-height:660px) {
+  .social-links a:before,.social-links a:after{padding-top:54px;padding-left:25px;font: normal 30px Socicon;width: 80px;height: 120px;}
+  .social-links a:after{padding-top:48px;padding-left:20px;font: normal 48px Socicon;margin-left: 85px;}
+  .tabs .paragraph{height:120px;width:360px;margin-left:80px;padding: 50px 0 0 10px;}
+  .tabs:hover {width: 450px;}
+  .tabs:hover .social-links a:before {margin-left: -100px;}
+  .tabs:hover .social-links a:after {margin-left: -5px;}
+  .tabs .paragraph h1 {font-size: 1.25em;margin-bottom: 5px;}
+  .tabs .paragraph p {font-size: 0.88em;padding-right: 30px;}
+  .tabs,.tabsMobile:hover {width:80px;}
+}
+@media(min-height:825px) {
+  .social-links a:before,.social-links a:after{padding-top:68px;padding-left:32px;font: normal 38px Socicon;width: 100px;height: 150px;}
+  .social-links a:after{padding-top:60px;padding-left:25px;font: normal 60px Socicon;margin-left: 107px;}
+  .tabs .paragraph{height:150px;width:450px;margin-left:100px;padding: 63px 0 0 13px;}
+  .tabs:hover {width: 563px;}
+  .tabs:hover .social-links a:before {margin-left: -125px;}
+  .tabs:hover .social-links a:after {margin-left: -7px;}
+  .tabs .paragraph h1 {font-size: 1.57em;margin-bottom: 7px;}
+  .tabs .paragraph p {font-size: 1.10em;padding-right: 38px;}
+  .tabs,.tabsMobile:hover {width:100px;}
+}
+@media(min-height:990px) {
+  .social-links a:before,.social-links a:after{padding-top:81px;padding-left:38px;font: normal 45px Socicon;width: 120px;height: 180px;}
+  .social-links a:after{padding-top:72px;padding-left:30px;font: normal 72px Socicon;margin-left: 128px;}
+  .tabs .paragraph{height:180px;width:540px;margin-left:120px;padding: 75px 0 0 15px;}
+  .tabs:hover {width: 675px;}
+  .tabs:hover .social-links a:before {margin-left: -150px;}
+  .tabs:hover .social-links a:after {margin-left: -8px;}
+  .tabs .paragraph h1 {font-size: 1.88em;margin-bottom: 8px;}
+  .tabs .paragraph p {font-size: 1.32em;padding-right: 45px;}
+  .tabs,.tabsMobile:hover {width:120px;}
+}
+@media(min-height:1155px) {
+  .social-links a:before,.social-links a:after{padding-top:95px;padding-left:44px;font: normal 53px Socicon;width: 140px;height: 210px;}
+  .social-links a:after{padding-top:84px;padding-left:35px;font: normal 84px Socicon;margin-left: 149px;}
+  .tabs .paragraph{height:210px;width:630px;margin-left:140px;padding: 88px 0 0 18px;}
+  .tabs:hover {width: 788px;}
+  .tabs:hover .social-links a:before {margin-left: -175px;}
+  .tabs:hover .social-links a:after {margin-left: -9px;}
+  .tabs .paragraph h1 {font-size: 2.19em;margin-bottom: 9px;}
+  .tabs .paragraph p {font-size: 1.54em;padding-right: 53px;}
+  .tabs,.tabsMobile:hover {width:140px;}
+}
+@media(min-height:1320px) {
+  .social-links a:before,.social-links a:after{padding-top:108px;padding-left:50px;font: normal 60px Socicon;width: 160px;height: 240px;}
+  .social-links a:after{padding-top:96px;padding-left:40px;font: normal 96px Socicon;margin-left: 170px;}
+  .tabs .paragraph{height:240px;width:720px;margin-left:160px;padding: 100px 0 0 20px;}
+  .tabs:hover {width: 900px;}
+  .tabs:hover .social-links a:before {margin-left: -200px;}
+  .tabs:hover .social-links a:after {margin-left: -10px;}
+  .tabs .paragraph h1 {font-size: 2.5em;margin-bottom: 10px;}
+  .tabs .paragraph p {font-size: 1.76em;padding-right: 60px;}
+  .tabs,.tabsMobile:hover {width:160px;}
+}
+@media(min-height:1650px) {
+  .social-links a:before,.social-links a:after{padding-top:135px;padding-left:63px;font: normal 75px Socicon;width: 200px;height: 300px;}
+  .social-links a:after{padding-top:120px;padding-left:50px;font: normal 120px Socicon;margin-left: 213px;}
+  .tabs .paragraph{height:300px;width:900px;margin-left:200px;padding: 125px 0 0 25px;}
+  .tabs:hover {width: 1125px;}
+  .tabs:hover .social-links a:before {margin-left: -250px;}
+  .tabs:hover .social-links a:after {margin-left: -13px;}
+  .tabs .paragraph h1 {font-size: 3.13em;margin-bottom: 13px;}
+  .tabs .paragraph p {font-size: 2.20em;padding-right: 75px;}
+  .tabs,.tabsMobile:hover {width:200px;}
+}
+.website-icon a:before, .website-icon a:after {
+  content: '\e903';
+}
+.github-icon a:before, .github-icon a:after {
+  content: '\e902';
+}
+.linkedin-icon a:before, .linkedin-icon a:after {
+  content: '\e909';
+}
+.email-icon a:before, .email-icon a:after {
+  content: '\e908';
+}
+.resume-icon a:before, .resume-icon a:after {
+  content: '\e901';
+}
+.reddit-icon a:before, .reddit-icon a:after {
+  content: '\e906';
+}
+.twitch-icon a:before, .twitch-icon a:after {
+  content: '\e907';
+}
+.youtube-icon a:before, .youtube-icon a:after {
+  content: '\e904';
+}
+.twitter-icon a:before, .twitter-icon a:after {
+  content: '\e905';
+}
+.imgur-icon a:before, .imgur-icon a:after {
+  content: '\e900';
+}
